@@ -1,6 +1,6 @@
 resource "google_service_account" "gke_sa" {
   account_id   = "${local.name}-gke-sa"
-  display_name = "Service Account VM"
+  display_name = "Service Account GKE"
 }
 
 resource "google_project_iam_member" "member-role" {
